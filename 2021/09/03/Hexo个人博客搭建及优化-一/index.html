@@ -479,14 +479,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    246
+                    554
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -517,6 +517,30 @@
 git -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>不出意外的话，输入单行命令后会显示这两个的版本号，然后下载Hexo</p>
+<pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>在查看下hexo -v 看下版本，显示了版本信息，就说明安装成功了然后直接安装</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo init &lt;文件夹名字&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>然后再就是改Hexo博客的主题了，我用的matery主题，clone或者下载压缩包到博客文件的下的themes文件内即可</p>
+<p>matery主题地址：<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">https://github.com/blinkfox/hexo-theme-matery</a></p>
+<p>然后再去改下根目录下的config.yml文件里的 thems：matery</p>
+<p>然后就是部署到远端，我用的Gitee和GitHub，Conding没用，好像是前六个月免费，后续就要收钱了，我觉得GitHub蛮好用了，就用这个和码云就行了，生产本地密匙</p>
+<pre class="line-numbers language-none"><code class="language-none">$ ls -al ~&#x2F;.ssh
+# 列出你.ssh目录中的文件（如果存在文件的话）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>如果没有就生产下</p>
+<pre class="line-numbers language-none"><code class="language-none"> ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
+# 创建一个 ssh key, 用准备好的email作为标签
+Generating public&#x2F;private rsa key pair.
+Enter file in which to save the key (&#x2F;c&#x2F;Users&#x2F;you&#x2F;.ssh&#x2F;id_rsa): [Press enter]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>之后连续enter即可，再去Gitee和GitHub添加ssh密匙，再去我的Hexo文件 Git 清除下，生产，再部署到远端</p>
+<pre class="line-numbers language-none"><code class="language-none">$ Hexo clean
+$ hexo g
+$ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>然后一个个人博客就完成了</p>
 
                 
             </div>
@@ -812,16 +836,16 @@ git -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/01/hello-world/">
+                <a href="/2021/09/03/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96-%E4%B8%80/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Hexo个人博客搭建及优化-一">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Hexo个人博客搭建及优化-一</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -832,15 +856,32 @@ git -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            雪 花
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E9%83%A8%E7%BD%B2%E7%AF%87/" class="post-category">
+                                    部署篇
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/Bolg/">
+                        <span class="chip bg-color">Bolg</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -989,7 +1030,7 @@ git -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">319</span>
+                        class="white-color">7.2k</span>
             
             
             
