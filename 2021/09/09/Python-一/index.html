@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo个人博客搭建及优化-一, 雪花">
+    <meta name="keywords" content="Python(二), 雪花">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo个人博客搭建及优化-一 | 雪花</title>
+    <title>Python(二) | 雪花</title>
     <link rel="icon" type="image/png" href="/xwsss/xwsss.github.io/favicon%20(2).png">
 
     <link rel="stylesheet" type="text/css" href="/xwsss/xwsss.github.io/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/xwsss/xwsss.github.io/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/xwsss/xwsss.github.io/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo个人博客搭建及优化-一</h1>
+                    <h1 class="description center-align post-title">Python(二)</h1>
                 </div>
             </div>
         </div>
@@ -439,29 +439,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/xwsss/xwsss.github.io/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
-                            </a>
-                        
-                            <a href="/xwsss/xwsss.github.io/tags/Bolg/">
-                                <span class="chip bg-color">Bolg</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/xwsss/xwsss.github.io/categories/%E9%83%A8%E7%BD%B2%E7%AF%87/" class="post-category">
-                                部署篇
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -470,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-03
+                    2021-09-09
                 </div>
                 
 
@@ -479,7 +462,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    554
+                    574
                 </div>
                 
 
@@ -509,38 +492,200 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Hexo个人博客搭建到Github、Gitee，以及一些后续优化，需要的一些工具</p>
-<p>Node.js    这里的Node.js 我用的是老版本的node-v12.14.0-x64.msi ，之前用最先版的报错了，没怎么仔细看直接换了版本，网址:   <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a></p>
-<p>Git            这个GIt我用来代码提交及一些命令行的操作，还有一些其他的用法，暂时还没了解，直接下新版的就行了                   网址：<a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
-<p> 安装好了之后就可以开始准备博客的搭建了，在电脑D盘创建了一个文件夹 Hexo,这个是你博客后面的名称可以随意取名，然后再去文件夹里右键Git Bush，打开命令行输入命令来查看工具的版本,并且是否是成功安装了的</p>
-<pre class="line-numbers language-none"><code class="language-none">node -v
-git -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+                <p>Python常见转义字符</p>
+<pre class="line-numbers language-none"><code class="language-none">\n  换行符    \a  响铃
+\\  反斜线    \b  退格
+\’  单引号    \t  制表符
+\”  双引号    \r  回车<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>不出意外的话，输入单行命令后会显示这两个的版本号，然后下载Hexo</p>
-<pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>变量的命名规则</p>
+<ul>
+<li><p>变量名只能包含数字、字母、和下划线 【0-9，a-z，A-Z，_，其他均为非法字符会引起报错】</p>
+</li>
+<li><p>变量名必须以字母或下划线字符开头</p>
+</li>
+<li><p>变量名称区分大小写 【例如：name、Name、NAME   这是三个不同的变量和Java的驼峰命名有些不同】</p>
+</li>
+<li><p>如果一个变量名包含多个单词，是用下划线进行分隔【例如：my_name、my_friends，命名时尽量取其相近的单词，以便查看其释义例如：name&gt;n，name显然更好理解，不然写个n不知道你这个代表着什么意思】</p>
+</li>
+</ul>
+<hr>
+<p>关键字，无法用作变量名、函数名、等其他标识符</p>
+<pre class="line-numbers language-none"><code class="language-none">False	await	else	import	   pass	  None	   break	 except      in      raise		elif
+#假     等待	  否则    导入，输入   通过    没有，空   断       除了，除非   在，于    提高
+True	class	finally		is		return		and		continue	for		lambda		try		if
 
-<p>在查看下hexo -v 看下版本，显示了版本信息，就说明安装成功了然后直接安装</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo init &lt;文件夹名字&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+as	def	from	nonlocal	while	assert		del		global		not		with	async	or	yield
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>然后再就是改Hexo博客的主题了，我用的matery主题，clone或者下载压缩包到博客文件的下的themes文件内即可</p>
-<p>matery主题地址：<a href="https://github.com/blinkfox/hexo-theme-matery">https://github.com/blinkfox/hexo-theme-matery</a></p>
-<p>然后再去改下根目录下的config.yml文件里的 thems：matery</p>
-<p>然后就是部署到远端，我用的Gitee和GitHub，Conding没用，好像是前六个月免费，后续就要收钱了，我觉得GitHub蛮好用了，就用这个和码云就行了，生产本地密匙</p>
-<pre class="line-numbers language-none"><code class="language-none">$ ls -al ~&#x2F;.ssh
-# 列出你.ssh目录中的文件（如果存在文件的话）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>如果没有就生产下</p>
-<pre class="line-numbers language-none"><code class="language-none"> ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
-# 创建一个 ssh key, 用准备好的email作为标签
-Generating public&#x2F;private rsa key pair.
-Enter file in which to save the key (&#x2F;c&#x2F;Users&#x2F;you&#x2F;.ssh&#x2F;id_rsa): [Press enter]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>之后连续enter即可，再去Gitee和GitHub添加ssh密匙，再去我的Hexo文件 Git 清除下，生产，再部署到远端</p>
-<pre class="line-numbers language-none"><code class="language-none">$ Hexo clean
-$ hexo g
-$ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>然后一个个人博客就完成了</p>
+<p>数据类型：</p>
+<p>数字类型- {int 整型    float 浮点型}</p>
+<p>布尔类型-{and    or    not}</p>
+<p>字符串-{}</p>
+<p>算术运算符 </p>
+<p>取模(两个数相除的余数)</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">名称</th>
+<th align="center">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">+</td>
+<td align="center">加</td>
+<td align="center">a+b</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">减</td>
+<td align="center">a-b</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center">乘</td>
+<td align="center">a*b</td>
+</tr>
+<tr>
+<td align="center">/</td>
+<td align="center">除</td>
+<td align="center">a/b</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td align="center">取模</td>
+<td align="center">a%b</td>
+</tr>
+<tr>
+<td align="center">**</td>
+<td align="center">幂</td>
+<td align="center">a**b</td>
+</tr>
+<tr>
+<td align="center">//</td>
+<td align="center">取整</td>
+<td align="center">a//b</td>
+</tr>
+</tbody></table>
+<p>​    赋值运算符  </p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">实例</th>
+<th align="center">等于</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">=</td>
+<td align="center">a=3</td>
+<td align="center">a=4</td>
+</tr>
+<tr>
+<td align="center">+=</td>
+<td align="center">a+=3</td>
+<td align="center">a=a+3</td>
+</tr>
+<tr>
+<td align="center">-=</td>
+<td align="center">a-=3</td>
+<td align="center">a=a-3</td>
+</tr>
+<tr>
+<td align="center">*=</td>
+<td align="center">a*=3</td>
+<td align="center">a=a*3</td>
+</tr>
+<tr>
+<td align="center">/=</td>
+<td align="center">a/=3</td>
+<td align="center">a=a/3</td>
+</tr>
+<tr>
+<td align="center">%=</td>
+<td align="center">a%=3</td>
+<td align="center">a=a%3</td>
+</tr>
+<tr>
+<td align="center">**=</td>
+<td align="center">a**=3</td>
+<td align="center">a=a**3</td>
+</tr>
+<tr>
+<td align="center">//=</td>
+<td align="center">a//=3</td>
+<td align="center">a=a//3</td>
+</tr>
+</tbody></table>
+<p>比较运算符</p>
+<p>(a=18j就是a就表示是18，a==18就表示a等于18)</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">名称</th>
+<th align="center">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">==</td>
+<td align="center">等于</td>
+<td align="center">a==b</td>
+</tr>
+<tr>
+<td align="center">!=</td>
+<td align="center">不等于</td>
+<td align="center">a!=b</td>
+</tr>
+<tr>
+<td align="center">&gt;</td>
+<td align="center">大于</td>
+<td align="center">a&gt;b</td>
+</tr>
+<tr>
+<td align="center">&lt;</td>
+<td align="center">小于</td>
+<td align="center">a&lt;b</td>
+</tr>
+<tr>
+<td align="center">&gt;=</td>
+<td align="center">大于或等于</td>
+<td align="center">a&gt;=b</td>
+</tr>
+<tr>
+<td align="center">&lt;=</td>
+<td align="center">小于或等于</td>
+<td align="center">a&lt;=b</td>
+</tr>
+</tbody></table>
+<p>逻辑运算符</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td>如果两个都为真，则返回true</td>
+<td>a&gt;3 and b&lt;10</td>
+</tr>
+<tr>
+<td>or</td>
+<td>如果其中一个为真，则返回true</td>
+<td>a&gt;3 or b&lt;10</td>
+</tr>
+<tr>
+<td>not</td>
+<td>反转结果，如果结果为true，则返回false</td>
+<td>not(a&gt;2 and b&lt;10)</td>
+</tr>
+</tbody></table>
+<p>索引语法：变量[下标]，当从前往后索引时，下标从 0 开始。当从后往前索引时，下标从 -1 开始。</p>
+<p><img src="/xwsss/xwsss.github.io/xwsss/xwsss.github.io/2021/09/09/Python-%E4%B8%80/Hexo\source_posts\Python-二\image-20210909040033086.png"></p>
 
                 
             </div>
@@ -557,7 +702,7 @@ $ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/xwsss/xwsss.github.io/about" rel="external nofollow noreferrer">雪花</a>
+                    <a href="/xwsss/xwsss.github.io/about" rel="external nofollow noreferrer">雪 花</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -567,7 +712,7 @@ $ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/xwsss/xwsss.github.io/xwsss/xwsss.github.io/2021/09/03/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96-%E4%B8%80/">https://github.com/xwsss/xwsss.github.io/xwsss/xwsss.github.io/2021/09/03/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96-%E4%B8%80/</a>
+                    <a href="https://github.com/xwsss/xwsss.github.io/xwsss/xwsss.github.io/2021/09/09/Python-%E4%B8%80/">https://github.com/xwsss/xwsss.github.io/xwsss/xwsss.github.io/2021/09/09/Python-%E4%B8%80/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -580,7 +725,7 @@ $ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/xwsss/xwsss.github.io/about" target="_blank">雪花</a>
+                    <a href="/xwsss/xwsss.github.io/about" target="_blank">雪 花</a>
                     !
                 </span>
             </div>
@@ -604,15 +749,7 @@ $ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/xwsss/xwsss.github.io/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
-                                </a>
-                            
-                                <a href="/xwsss/xwsss.github.io/tags/Bolg/">
-                                    <span class="chip bg-color">Bolg</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -782,9 +919,48 @@ $ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/xwsss/xwsss.github.io/2021/09/09/Python-%E4%B8%80/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/xwsss/xwsss.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="Python(二)">
+                        
+                        <span class="card-title">Python(二)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            雪 花
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/xwsss/xwsss.github.io/2021/09/03/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BC%98%E5%8C%96-%E4%BA%8C/">
                     <div class="card-image">
@@ -802,9 +978,9 @@ $ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -817,60 +993,6 @@ $ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/xwsss/xwsss.github.io/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/xwsss/xwsss.github.io/tags/Bolg/">
-                        <span class="chip bg-color">Bolg</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/xwsss/xwsss.github.io/2021/09/03/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96-%E4%B8%80/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/xwsss/xwsss.github.io/medias/featureimages/22.jpg" class="responsive-img" alt="Hexo个人博客搭建及优化-一">
-                        
-                        <span class="card-title">Hexo个人博客搭建及优化-一</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/xwsss/xwsss.github.io/categories/%E9%83%A8%E7%BD%B2%E7%AF%87/" class="post-category">
-                                    部署篇
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
                 
                 <div class="card-action article-tags">
                     
